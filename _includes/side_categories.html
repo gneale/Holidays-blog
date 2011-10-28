@@ -1,0 +1,8 @@
+<div id="blog-categories" class="">
+	<h4 class="component-title ac">Blog Categories</h4>
+	<ul class="side_nav">
+		{% for topic in site.iterable.categories %}
+			<li><a href="/categories/{{ topic.name | replace:' ', '-' | downcase }}">{{ topic.name }}</a></li>
+		{% endfor %}
+	</ul>
+</div>

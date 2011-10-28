@@ -1,0 +1,669 @@
+/* @override http://localhost:4000/css/768.css */
+
+/* 768 
+
+_________________________________________________
+
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+_____________________________________________________
+
+1 ROOT
+2 HEADINGS
+3 TYPOGRAPHY
+4 LINKS
+5 FIGURES & IMAGES
+6 TABLES
+7 FORMS
+8 BANNER
+9 NAVIGATION
+10 CONTENT
+11 MAIN
+12 COMPLEMENTARY
+13 CONTENTINFO
+14 GLOBAL OBJECTS
+15 VENDOR-SPECIFIC 
+16 MODERNIZR
+17 TEMPLATE SPECIFICS
+
+COLOURS 
+
+*/
+
+/* 1 ROOT 					============================================================================= */
+/* 2 HEADINGS 				============================================================================= */
+/* 3 TYPOGRAPHY 			============================================================================= */
+/* 4 LINKS 					============================================================================= */
+/* 5 FIGURES & IMAGES 		============================================================================= */
+
+
+/* @group photslider */
+
+/* 7.1 Photograph Slider. */
+.photograph-slider { 
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.photograph-slider ul li figure img {
+	width: 100%;
+	max-width: 320px;
+}
+
+
+.photograph-slider.hidden { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0; }
+.photograph-slider ul { float: left; overflow: visible !important;
+	margin: 0;
+	padding: 0;
+}
+
+.photograph-slider ul li {
+	display: inline;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.photograph-slider .jcarousel-clip { overflow: visible !important; }
+.photograph-slider .slide, .photograph-slider .jcarousel-item { background: #f6f6f6; border:2px solid #fff; display: block;
+
+/* Default slide dimensions. */
+/*width: 346px; 
+height: 346px;*/  
+
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	margin: 5px 10px 5px 0;
+}
+.photograph-slider .slide a, .photograph-slider .jcarousel-item a { display: block; border: 1px solid #C8C8C8; margin: 12px; overflow: hidden; text-align: center; }
+
+
+
+/* @end */
+/* 6 TABLES 				============================================================================= */
+/* 7 FORMS 					============================================================================= */
+/* 8 BANNER 				============================================================================= */
+
+#logo img {
+	width:672px;
+}
+
+#logo .site-description { 
+	color:#333; 
+	font-family: 'BergamoStd-Italic', Georgia, serif; 
+	color: #222; 
+	font-weight: light; 
+	font-size: 1.4em; 
+	margin: 10px 0 2px; 
+	display: block;
+	text-align: center;
+}
+
+/* 9 NAVIGATION				============================================================================= */
+
+#top-nav nav ul#big-screen {
+	display: block;
+}
+
+#top-nav nav {
+	display: none;
+}
+
+#mid-nav nav {
+	display: block;
+}
+
+#mid-nav nav ul#small-screen {
+	display: none;
+}
+
+
+
+/* @group Under Logo Navi */
+
+
+nav{ 
+	font: 17px/1em sans-serif; 
+	margin-bottom: 2em; 
+	font: 18px/1em 'FontSiteSans-Cond',arial,sans-serif; 
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*9.2 Sidebar Categories and Most recent*/
+
+.side_nav {
+	z-index:99; margin:0; padding:0; list-style:none; line-height:1; text-align: left; 
+}
+
+.side_nav ul {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+.side_nav ul li {
+	background: transparent url(../img/seperator.png) no-repeat scroll right center; display:inline-block; line-height: 42px; position:relative; zoom: 1;
+}
+
+ul.side_nav li a {
+	display:block; line-height: 24px;
+	font-size: 16px;
+	margin-top: 0;
+}
+
+/*9.3 Navigation*/
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+.nav { 
+	z-index:99; 
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+	line-height:1; 
+	text-align: center; }
+
+.nav a { 
+	position:relative; 
+	color:#3e3e3e; 
+	z-index:100; 
+	margin: 0 10px 0 0; 
+	padding:0 15px; 
+	text-decoration:none;  }
+
+nav .nav li  { 
+	background: transparent url(../img/seperator.png) no-repeat scroll right center; 
+	display:inline-block; 
+	line-height: 42px; 
+	position:relative; 
+	zoom: 1; }
+.ie7 nav .nav li {
+	float: left;
+}
+
+.nav li a.sf-with-ul { }
+
+.nav a:hover, 
+.nav li.current_page_item a, 
+.nav li.current_page_parent a,
+.nav li.current-menu-ancestor a,
+.nav li.current-cat a,
+.nav li.current-menu-item a { /* Fallback for web browsers that doesn't support RGBa */
+background-color: rgb(0, 0, 0) transparent;
+/* RGBa with 0.6 opacity */
+background-color: rgba(0, 0, 0, 0.1);
+/* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); 
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a000000,endColorstr=#1a000000)";
+background-image: url("../img/bg") repeat scroll 0 0; color: #000; }
+
+nav .nav li:last-child a { border-right:none; }
+
+
+
+/* Optional Styling */
+nav { 
+/* Fallback for web browsers that doesn't support RGBa */
+background-color: rgb(0, 0, 0) transparent;
+/* RGBa with 0.6 opacity */
+background-color: rgba(0, 0, 0, 0.1);
+/* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#1a000000',GradientType=0 ); 
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a000000,endColorstr=#1a000000)";
+background-image: url("../img/bg.png") repeat scroll 0 0; border-bottom:1px solid #f8f7f3; }
+nav .nav li a { display:block; line-height: 42px;
+	font-size: 16px;
+}
+nav .nav li:last-child a { border-right:none; }
+
+
+
+	/* 2.2.1 Drop-down menus */
+	.nav li ul  { background: #fafafa; margin:0; padding:0; position: absolute; left: -999em; width: 180px; border-color: #F8F7F3 #E3E3E3 #E3E3E3; border-style: none solid solid; border-width: medium 1px 1px; z-index:999; }
+	nav .nav li ul li { background-image: none; display: block; line-height: 18px; text-align: left; }
+	.nav li ul li a  { font: 12px/1.5em Arial,sans-serif; padding:8px 10px; width:160px; color:#666; background: none; display: block; text-transform: none; }
+	.nav li ul li a:hover  { text-decoration: underline; }
+	.nav li ul li a.sf-with-ul { padding-right:0; }
+	.nav li ul ul  { margin: -37px 0 0 140px; }
+	
+	.nav li ul li a:hover, 
+	.nav li.current_page_item ul li a, 
+	.nav li.current_page_parent ul li a,
+	.nav li.current-menu-ancestor ul li a,
+	.nav li.current-cat a ul li,
+	.nav li.current-menu-item ul li a,
+	.nav li.sfHover ul li { background:none;}
+	
+	.nav li:hover,.nav li.hover  { position:static; }
+	.nav li:hover ul ul, .nav li.sfhover ul ul,
+	.nav li:hover ul ul ul, .nav li.sfhover ul ul ul,
+	.nav li:hover ul ul ul ul, .nav li.sfhover ul ul ul ul { left:-999em; }
+	.nav li:hover ul, .nav li.sfhover ul,
+	.nav li li:hover ul, .nav li li.sfhover ul,
+	.nav li li li:hover ul, .nav li li li.sfhover ul,
+	.nav li li li li:hover ul, .nav li li li li.sfhover ul  { left:auto; }
+	
+	.nav .sf-sub-indicator { display:none; }
+	.nav li ul .sf-sub-indicator {background:url(images/arrow-superfish-right.png) no-repeat; top:38%; }
+	
+	/* Optional Styling */
+	nav .nav li ul  { 
+		/* Border Radius */
+		border-radius: 0 0 4px 4px; -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; 
+	
+		/* Box Shadow */
+		-moz-box-shadow: 0 2px 2px rgba(0,0,0,.03);
+		-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.03);
+		box-shadow: 0 2px 2px rgba(0,0,0,.03);
+	}
+	nav .nav ul li { background-image: none; }
+	nav .nav li ul ul { border-radius: 0 4px 4px 4px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+	nav .nav li ul li a { border:0; border-top:1px solid #fff; border-bottom:1px solid #dedede; line-height: 18px; }
+	nav .nav li ul li:first-child a { border-top:none; }
+	#navigation .nav li ul li:last-child a { border-bottom:none; }
+/* @end */
+
+/* 10 CONTENT 				============================================================================= */
+
+/* @group layouts */
+
+body.frontpage #main {
+	width: 100%;
+}
+
+body.full #main {
+	width: 100%;
+}
+
+body.sidebar #main {
+	width:70% ;
+	float: left;
+}
+
+body.sidebar #complementary {
+	width: 25%;
+	margin-left: 5%;
+	float: right;
+}
+
+#header-intro #header-photo {
+	display: none;
+	width: 65%;
+	float: right;
+}
+
+
+/* @end */
+
+/* @group Footer */
+
+#footer div.footer.col {
+	width: 30%;
+	padding-right: 2.5%;
+}
+
+/* @end */
+
+
+
+/* @group FRONTPAGE Specific */
+
+/*DEZIE INTRO*/
+
+#dezie-intro{
+  /*padding:10px 0;*/
+  width:100%;
+  float:left;
+}
+
+#dezie-intro li{
+  display:block;
+  float: left;
+  /*height:160px;*/
+  /*margin:0 auto;*/
+  width: 30%;
+  padding:.5%;
+  position:relative;
+	margin: 5px;
+}
+
+#dezie-intro li figure{
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+	margin: 0;
+	/*Mod*/
+	background: #f6f6f6; 
+	border:2px solid #fff; 
+	display: block;
+	margin: 3px;
+} 
+
+#dezie-intro li figure:hover{
+  top:-1px;
+  left:-1px;
+}
+
+#dezie-intro li figure img{
+  background:white;
+  /*width:92%;*/
+  -moz-box-shadow:0 0 5px rgba(0,0,0,.15);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,.15);
+   box-shadow:0 0 5px rgba(0,0,0,.15);
+     	
+}
+
+#dezie-intro li figure:hover img{
+  -moz-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+  -webkit-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+   box-shadow:1px 1px 4px rgba(0,0,0,.35);
+}
+
+#dezie-intro li figure a{
+  color: #444;
+  display: block;
+  font-size: .9375em;
+  font-weight: 400;
+  /*MOD*/
+  /*display: block;*/ 
+/*border: 1px solid #C8C8C8;*/ 
+margin: 12px; 
+overflow: hidden; 
+text-align: center;
+}
+
+/*VILLA INTRO*/
+
+
+
+#villa-intro{
+  /*padding:10px 0;*/
+  width:100%;
+  float:left;
+}
+
+#villa-intro li{
+  display:block;
+  float: left;
+  /*height:160px;*/
+  /*margin:0 auto;*/
+  width: 30%;
+  padding:.5%;
+  position:relative;
+	margin: 5px;
+}
+
+#villa-intro li figure{
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+	margin: 0;
+	/*Mod*/
+	background: #f6f6f6; 
+	border:2px solid #fff; 
+	display: block;
+	margin: 3px;
+} 
+
+#villa-intro li figure:hover{
+  top:-1px;
+  left:-1px;
+}
+
+#villa-intro li figure img{
+  background:white;
+  /*width:92%;*/
+  -moz-box-shadow:0 0 5px rgba(0,0,0,.15);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,.15);
+   box-shadow:0 0 5px rgba(0,0,0,.15);
+     	
+}
+
+#villa-intro li figure:hover img{
+  -moz-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+  -webkit-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+   box-shadow:1px 1px 4px rgba(0,0,0,.35);
+}
+
+#villa-intro li figure a{
+  color: #444;
+  display: block;
+  font-size: .9375em;
+  font-weight: 400;
+  /*MOD*/
+  /*display: block;*/ 
+/*border: 1px solid #C8C8C8;*/ 
+margin: 12px; 
+overflow: hidden; 
+text-align: center;
+}
+
+#villa-intro ul li:last-child {
+	display: block;
+}
+
+#villa-intro ul li:first-child {
+	display: block;
+}
+
+/*Features*/
+
+#features {
+	width: 100%;
+	float: left;
+}
+
+#features ul{
+	list-style-type: none;
+}
+
+#features li{
+  display:block;
+  float: left;
+  /*height:160px;*/
+  /*margin:0 auto;*/
+  width: 30%;
+  padding:.5%;
+  position:relative;
+	margin: 5px;
+}
+
+#features li figure{
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+	margin: 0;
+	/*Mod*/
+	background: #f6f6f6; 
+	border:2px solid #fff; 
+	display: block;
+	margin: 3px;
+	list-style-type: none;
+} 
+
+#features li figure:hover{
+  top:-1px;
+  left:-1px;
+}
+
+#features li figure img{
+  background:white;
+  /*width:92%;*/
+  -moz-box-shadow:0 0 5px rgba(0,0,0,.15);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,.15);
+   box-shadow:0 0 5px rgba(0,0,0,.15);
+     	
+}
+
+#features li figure:hover img{
+  -moz-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+  -webkit-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+   box-shadow:1px 1px 4px rgba(0,0,0,.35);
+}
+
+#features li figure a{
+  color: #444;
+  display: block;
+  font-size: .9375em;
+  font-weight: 400;
+  /*MOD*/
+  /*display: block;*/ 
+/*border: 1px solid #C8C8C8;*/ 
+margin: 12px; 
+overflow: hidden; 
+text-align: center;
+}
+
+/* @end */
+
+/* @group Rental List */
+
+#rental-list li{
+  display:block;
+  float: left;
+  /*height:160px;*/
+  /*margin:0 auto;*/
+  width: 100%;
+  padding:.5%;
+  position:relative;
+
+}
+
+#rental-list figure{
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+	margin: 0;
+	float: left;
+} 
+
+#rental-list div.rental-text {
+	width: 45%;
+	float: right;
+}
+
+#rental-list li figure:hover{
+  top:-1px;
+  left:-1px;
+}
+
+#rental-list li figure img{
+  background:white;
+  -moz-box-shadow:0 0 5px rgba(0,0,0,.15);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,.15);
+   box-shadow:0 0 5px rgba(0,0,0,.15);
+}
+
+#rental-list li figure:hover img{
+  -moz-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+  -webkit-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+   box-shadow:1px 1px 4px rgba(0,0,0,.35);
+}
+
+#rental-list li figure a{
+  color: #444;
+  display: block;
+  font-size: .9375em;
+  font-weight: 400;
+margin: 12px; 
+overflow: hidden; 
+text-align: center;
+}
+
+/* @end */
+
+/* @group Unit Pages */
+
+/*SubMenu*/
+
+
+#subMenu ul {
+	padding-top: 10px;
+}
+
+#subMenu ul li.box {
+	width: 15%;
+	margin-right: 1%;
+	display:inline-block;
+}
+
+/*Unit Intro*/
+
+#rental-content #intro-photo {
+	float: left;
+}
+
+#rental-content #intro-text {
+	float: right;
+	width: 45%;
+	margin-left: 2.5%;
+}
+
+/*Getting Here Page*/
+
+#rental-map {
+	width: 40%;
+	float: left;
+}
+
+#contact-info {
+	width: 25%;
+	padding-left: 2.5%;
+	float: right;
+}
+
+/* @end */
+
+/* @group Rates */
+
+
+
+/* @end */
+
+
+
+/* 11 MAIN 					============================================================================= */
+/* 12 COMPLEMENTARY 		============================================================================= */
+
+/* @group Top Blog tags */
+
+#top-blog {
+	display: none;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	width:60%;
+}
+
+/* @end */
+
+/* @group blog */
+
+body.blog h1, body.blog h2 {
+	font-size: 34px;
+	text-align: left;
+}
+
+
+/* 13 CONTENTINFO 			============================================================================= */
+
+#footer div.footer-col {
+	width: 30%;
+	padding-right: 2.5%;
+	float: left;
+}
+/* 14 GLOBAL OBJECTS 		============================================================================= */
+/* 15 VENDOR-SPECIFIC 		============================================================================= */
+/* 16 MODERNIZR 			============================================================================= */
+/* 17 TEMPLATE SPECIFICS 	============================================================================= */

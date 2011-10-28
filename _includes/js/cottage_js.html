@@ -1,0 +1,68 @@
+<!-- Scrolling -->
+<script type="text/javascript">
+$(function($) {
+    
+	$('#subMenu a').click(function(){
+		$.scrollTo("#rental-content",500);
+		return false;
+	});
+});
+
+</script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		var sections = $('#subMenu ul li a');
+		var loading = $('#loading');
+		var content = $('#content');
+
+		//Show loading
+		function showLoading(){
+			loading
+				.css({visibility:"visible"})
+				.css({opacity:"1"})
+				.css({display:"block"})
+		};
+		//Hide loading
+		function hideLoading(){
+			loading.fadeTo(1000, 0);
+			content.slideDown();
+		};
+		
+		//scrollTo
+		function scrollTo(){
+			scrollTop: $("#rental-content").offset().top
+		};
+		
+		hideLoading();
+		sections.click(function(){
+			//show the loading bar
+			showLoading();
+			//load selected section
+			switch(this.id){
+				case "details":
+					$('#rental-content').load("{{ site.url }}/ajax/cottage/accommodation.html", hideLoading);
+					break;
+				case "notes":
+					$('#rental-content').load('{{ site.url }}/ajax/dezie/notes.html', hideLoading);
+					break;
+				case "reviews":
+					$('#rental-content').load('{{ site.url }}/ajax/reviews.html', hideLoading);
+					break;
+				case "photos":
+					$('#rental-content').load('{{ site.url }}/ajax/cottage/photos.html', hideLoading);
+					break;
+				case "rates":
+					$('#rental-content').load('{{ site.url }}/ajax/rates.html', hideLoading);
+					break;
+				case "getting":
+					$('#rental-content').load('{{ site.url }}/ajax/getting_dezie.html', hideLoading);
+				default:
+					hideLoading();
+					break;
+			}
+		});
+
+	});
+</script>
+	

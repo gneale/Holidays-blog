@@ -1,0 +1,49 @@
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		var sections = $('#subMenu a');
+		var loading = $('#loading');
+		var content = $('#cottage-main');
+
+		//Show loading
+		function showLoading(){
+			loading
+				.css({visibility:"visisble"})
+				.css({opacity:"1"})
+				.css({display:"block"})
+		};
+		//Hide loading
+		function hideLoading(){
+			loading.fadeTo(1000, 0);
+			content.slideDown();
+		};
+		hideLoading();
+		sections.click(function(){
+			//show the loading bar
+			showLoading();
+			//load selected section
+			switch(this.id){
+				case "details":
+					$('#cottage-main').load("/ajax/dezie/accommodation.html", hideLoading);
+					break;
+				case "notes":
+					$('#cottage-main').load('/ajax/dezie/notes.html', hideLoading);
+					break;
+				case "reviews":
+					$('#cottage-main').load('/ajax/reviews.html', hideLoading);
+					break;
+				case "photos":
+					$('#cottage-main').load('/ajax/dezie/photos.html', hideLoading);
+					break;
+				case "rates":
+					$('#cottage-main').load('/ajax/rates.html', hideLoading);
+					break;
+				default:
+					hideLoading();
+					break;
+					
+			}
+		});
+		
+	});
+</script>
+	

@@ -1,0 +1,20 @@
+<footer role="contentinfo" id="footer" class="clearfix">
+  <p class="clearfix">{{ site.license }} <a href="{{ site.owner-page }}">{{ site.owner-name}}</a></p>
+	<div id="widgets" class="clearfix">
+		<div class="footer-col">
+			{% include break_deco_line.html %}
+			{% include tag_cloud.html %}
+		</div>
+		<div class="footer-col">
+			{% include break_deco_line.html %}
+			{% include side_categories.html %}
+		</div>
+		<div class="footer-col">
+			{% include break_deco_line.html %}
+			{% include recent_blog_posts.html %}
+		</div>
+	</div>
+	<div id="footer-nav" class="clearfix">
+		{% include nav.html %}
+	</div>
+</footer>

@@ -1,0 +1,18 @@
+---
+---
+<!-- <h2 class="headline-text component">Dezie Property Photos</h2>
+<div class="filagree-break grid_24 component">
+	<span>
+		<img src="/img/stuff/filagree.png" alt="Filagree" />
+	</span>
+</div> -->
+
+{% include cottage/photos.html %}
+{% include barn/photos.html %}
+{% include dezie/park_photos.html %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>

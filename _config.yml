@@ -1,0 +1,28 @@
+markdown: rdiscount
+auto: true
+# url: http://10.0.0.5:8888/holidays320
+url: http://holidaysindordogne.com
+site: "Holidays in Dordogne"
+exclude: ["README.md", "LICENSE.md", "TODO.md", "build", "test", "templates"]
+keywords: ["villa in france", "cottage in france", "cottage", "villa", "france", "gite", "pool", "dordogne", "self catering", "holiday", "family", "kids", "quality", "value", "flexible", "full kitchen", "towels", "bed linen", "perigord noir", "gites", "le bugue", "sarlat", "perigueux", "shooping", "markets", "history", "world heritage sites", "pre-historic", "caves", "chateaux", "medieval towns", "bastides", "peaceful", "canoeing", "golf", "bikes", "walking", "aquarium", "fine wines", "bordeaux", "bergerac", "wonderful food", "foie gras", "duck", "truffles"]
+
+owner-name: Grant Neale
+owner-page: http://holidaysindordogne.com
+owner-email: gneale@mac.com
+owner-site: Holidays in Dordogne
+
+
+license: All rights reserved
+
+pygments: true
+permalink: /:year/:month/:day/:title
+regeneration: true
+lsi: true
+exclude: README.textile Rakefile
+tag_title_prefix: 'Tag: '
+# base_url: http://10.0.0.5:8888/holidays320
+base_url: http://holidaysindordogne.com
+title: Holidays in Dordogne
+post_types:
+  - portfolio
+  - gallery

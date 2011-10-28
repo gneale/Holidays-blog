@@ -1,0 +1,154 @@
+/* @override http://localhost:4000/css/480.css */
+
+/* 480 
+
+_________________________________________________
+
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+_____________________________________________________
+
+1 ROOT
+2 HEADINGS
+3 TYPOGRAPHY
+4 LINKS
+5 FIGURES & IMAGES
+6 TABLES
+7 FORMS
+8 BANNER
+9 NAVIGATION
+10 CONTENT
+11 MAIN
+12 COMPLEMENTARY
+13 CONTENTINFO
+14 GLOBAL OBJECTS
+15 VENDOR-SPECIFIC 
+16 MODERNIZR
+17 TEMPLATE SPECIFICS
+
+COLOURS 
+
+*/
+
+/* 1 ROOT 					============================================================================= */
+
+
+/* 2 HEADINGS 				============================================================================= */
+/* 3 TYPOGRAPHY 			============================================================================= */
+/* 4 LINKS 					============================================================================= */
+/* 5 FIGURES & IMAGES 		============================================================================= */
+/* 6 TABLES 				============================================================================= */
+/* 7 FORMS 					============================================================================= */
+/* 8 BANNER 				============================================================================= */
+
+
+/* 9 NAVIGATION				============================================================================= */
+
+
+/* 10 CONTENT 				============================================================================= */
+
+/*#content-wrap {
+	width: 90%;
+}*/
+
+#main-slider div.slides{
+  /*padding:10px 0;*/
+  width:100%;
+  float:left;
+}
+
+#main-slider div.slides li{
+  display:block;
+  float: left;
+  /*height:160px;*/
+  /*margin:0 auto;*/
+  width: 30%;
+  padding:.5%;
+  position:relative;
+  	/*Mod*/
+	background: #f6f6f6; 
+	border:2px solid #fff; 
+	display: block;
+	margin: 3px;
+}
+
+#main-slider div.slides li figure{
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+	margin: 0;
+} 
+
+#main-slider div.slides li figure:hover{
+  top:-1px;
+  left:-1px;
+}
+
+#main-slider div.slides li figure img{
+  background:white;
+  /*width:92%;*/
+  -moz-box-shadow:0 0 5px rgba(0,0,0,.15);
+  -webkit-box-shadow:0 0 5px rgba(0,0,0,.15);
+   box-shadow:0 0 5px rgba(0,0,0,.15);
+}
+
+#main-slider div.slides li figure:hover img{
+  -moz-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+  -webkit-box-shadow:1px 1px 4px rgba(0,0,0,.35);
+   box-shadow:1px 1px 4px rgba(0,0,0,.35);
+}
+
+#main-slider div.slides li figure a{
+  color: #444;
+  display: block;
+  font-size: .9375em;
+  font-weight: 400;
+  /*MOD*/
+  /*display: block;*/ 
+/*border: 1px solid #C8C8C8;*/ 
+margin: 12px; 
+overflow: hidden; 
+text-align: center;
+}
+
+#main-slider div.slides ul li:last-child {
+	display: block;
+}
+
+#main-slider div.slides ul li:first-child {
+	display: block;
+}
+
+
+
+/* 11 MAIN 					============================================================================= */
+/* 12 COMPLEMENTARY 		============================================================================= */
+/* 13 CONTENTINFO 			============================================================================= */
+/* 14 GLOBAL OBJECTS 		============================================================================= */
+
+.headline-text { 
+display: block; 
+font:40px/46px 'BergamoStd-Italic', Georgia, serif; 
+/*margin: 0 75px;*/ 
+margin: 0 5%; 
+text-align: center; 
+/*text-transform: uppercase;*/ }
+
+.component { margin-bottom: 20px; }
+.component-title { margin: 50px 0 40px; text-align: center; font-family: 'BergamoStd-Italic',arial,sans-serif; font-size: 24px; }
+.component-title.al { margin: 0px 0 40px; text-align: left; font-family: 'BergamoStd-Italic',arial,sans-serif; font-size: 24px; }
+.component-title.ac { margin: 0px 0 40px; text-align: center; font-family: 'BergamoStd-Italic',arial,sans-serif; font-size: 24px; }
+.component-title a { margin: 50px 0 40px; text-align: center; font-family: 'BergamoStd-Italic',arial,sans-serif; font-size: 24px;
+}
+.component-title.al.padding { margin: 20px 0 10px; text-align: left; font-family: 'BergamoStd-Italic',arial,sans-serif; font-size: 24px; }
+
+
+
+/* 15 VENDOR-SPECIFIC 		============================================================================= */
+/* 16 MODERNIZR 			============================================================================= */
+/* 17 TEMPLATE SPECIFICS 	============================================================================= */

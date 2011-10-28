@@ -1,0 +1,98 @@
+/* 992 
+
+_________________________________________________
+
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+_____________________________________________________
+
+1 ROOT
+2 HEADINGS
+3 TYPOGRAPHY
+4 LINKS
+5 FIGURES & IMAGES
+6 TABLES
+7 FORMS
+8 BANNER
+9 NAVIGATION
+10 CONTENT
+11 MAIN
+12 COMPLEMENTARY
+13 CONTENTINFO
+14 GLOBAL OBJECTS
+15 VENDOR-SPECIFIC 
+16 MODERNIZR
+17 TEMPLATE SPECIFICS
+
+COLOURS 
+
+*/
+
+/* 1 ROOT 					============================================================================= */
+body {
+	max-width: 992px;
+}
+/* 2 HEADINGS 				============================================================================= */
+/* 3 TYPOGRAPHY 			============================================================================= */
+/* 4 LINKS 					============================================================================= */
+/* 5 FIGURES & IMAGES 		============================================================================= */
+/* 6 TABLES 				============================================================================= */
+/* 7 FORMS 					============================================================================= */
+/* 8 BANNER 				============================================================================= */
+/* 9 NAVIGATION				============================================================================= */
+/* 10 CONTENT 				============================================================================= */
+
+#header-intro #header-photo {
+	display: block;
+	width: 65%;
+	text-align: right;
+}
+
+#header-intro #header-text {
+	width: 32.5%;
+	padding-right: 2.5%;
+	float: left;
+}
+
+/* @group Rental List */
+
+#rental-list div.rental-text {
+	width: 60%;
+	float: right;
+}
+
+/* @end */
+
+/* @group Unit Pages */
+
+#rental-content #intro-text {
+	float: right;
+	width: 60%;
+	margin-left: 2.5%;
+}
+
+
+/*Getting Here Page*/
+
+
+#contact-info {
+	width: 45%;
+	padding-left: 2.5%;
+	float: right;
+}
+
+/* @end */
+
+
+
+/* 11 MAIN 					============================================================================= */
+/* 12 COMPLEMENTARY 		============================================================================= */
+/* 13 CONTENTINFO 			============================================================================= */
+/* 14 GLOBAL OBJECTS 		============================================================================= */
+/* 15 VENDOR-SPECIFIC 		============================================================================= */
+/* 16 MODERNIZR 			============================================================================= */
+/* 17 TEMPLATE SPECIFICS 	============================================================================= */
